@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# 🔎 GITFIND - GitHub Finder -
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Badge Status](https://img.shields.io/badge/status-finalizado-green)
+![Badge React](https://img.shields.io/badge/react-18-blue)
+![Badge API](https://img.shields.io/badge/API-GitHub-lightgrey)
 
-## Available Scripts
+Aplicação em **React** que consome a API pública do **GitHub** para buscar informações de um usuário e listar seus repositórios mais recentes.  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Tecnologias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ⚛️ [React](https://react.dev/)  
+- 🎨 CSS (estilização personalizada)  
+- 🌐 [GitHub REST API](https://docs.github.com/pt/rest)  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Instalação e uso
 
-### `npm run build`
+```bash
+# Clone este repositório
+git clone https://github.com/alexsilvaribeiro/github-finder.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Acesse a pasta do projeto
+cd github-finder
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Instale as dependências
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Inicie o servidor de desenvolvimento
+npm start
+```
 
-### `npm run eject`
+A aplicação estará disponível em: **http://localhost:3000**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📸 Funcionalidades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 🔍 Buscar usuários do GitHub pelo username  
+- 👤 Exibir informações do perfil:
+  - Avatar
+  - Nome e login
+  - Bio
+  - Número de repositórios públicos
+- 📂 Listar até 10 repositórios públicos mais recentes
+- ⚠️ Tratamento de erros (usuário inexistente, campo vazio, falha na API)
+- ⌨️ Buscar ao pressionar **Enter**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📂 Estrutura de Pastas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+📦 github-finder
+ ┣ 📂 src
+ ┃ ┣ 📂 assets         # Imagens (ex: background.png)
+ ┃ ┣ 📂 components     # Componentes reutilizáveis (Header, ItemList)
+ ┃ ┣ 📂 pages
+ ┃ ┃ ┗ 📂 home         # Página principal (Home.jsx + styles.css)
+ ┃ ┗ 📜 index.js       # Entrada da aplicação
+ ┣ 📜 package.json
+ ┗ 📜 README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📸 Exemplo de Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Busca por usuário
+![Screenshot busca](./assets/example-search.png)
 
-### Analyzing the Bundle Size
+### Resultado encontrado
+![Screenshot perfil](./assets/example-profile.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🤝 Contribuindo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contribuições são sempre bem-vindas!  
+Para contribuir:  
+1. Faça um fork do projeto  
+2. Crie uma branch com sua feature (`git checkout -b minha-feature`)  
+3. Commit suas alterações (`git commit -m 'feat: minha nova feature'`)  
+4. Faça push para a branch (`git push origin minha-feature`)  
+5. Abra um Pull Request  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 Licença
 
-### Deployment
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 👨‍💻 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com ❤️ por **[Alex Ribeiro](https://github.com/alexsilvaribeiro)** 🚀
+
