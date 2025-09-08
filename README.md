@@ -71,10 +71,10 @@ A aplicação estará disponível em: **http://localhost:3000**
 ## 📸 Exemplo de Uso
 
 ### Busca por usuário
-![Screenshot busca](./assets/example-search.png)
+![Screenshot busca](./src/assets/example-search.png)
 
 ### Resultado encontrado
-![Screenshot perfil](./assets/example-profile.png)
+![Screenshot perfil](./src/assets/example-profile.png)
 
 ---
 
